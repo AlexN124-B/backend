@@ -16,6 +16,7 @@ with open("students.json", "r", encoding="utf-8") as f:
     students = json.load(f)
 
 @app.get("/students")
+
 def get_students():
     return students
 
