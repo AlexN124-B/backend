@@ -20,6 +20,7 @@ def get_students():
     return students
 
 @app.get("/students/{student_id}")
+
 def get_student(student_id: int):
     for student in students:
         if student["id"] == student_id:
